@@ -1,0 +1,160 @@
+body {
+  font-size: 36px;
+  font-family: 'Heebo', sans-serif;
+  /* background-color: #fbe3be; */
+  color: black;
+  margin: 0px;
+  background:url('./giphystatic.gif') repeat fixed;
+  height:100%;
+  width:100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: 18px;
+}
+
+span.header_sayings {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 4px;
+}
+
+
+.page_title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 50px;
+  /* color: #e5c5a8; */
+  color: black;
+  text-transform: uppercase;
+}
+
+
+/* .highlight_future {
+    background-color: black;
+} */
+
+/* .not_ok:hover {
+  text-decoration: line-through;
+  cursor:not-allowed;
+}
+
+.ok:hover {
+  text-decoration: underline wavy;
+  cursor: default;
+} */
+
+.title_word {
+    color: #4237ff;
+}
+
+.first_six_signs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0px 30px;
+}
+
+
+.last_six_signs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 0px 30px;
+}
+
+
+.contact_footer {
+  display: flex;
+  flex direction: row;
+  justify-content: space-between;
+  margin: 0px 24px;
+  font-size: 18px;
+}
+
+.header_text {
+  display: flex;
+  flex direction: row;
+  justify-content: space-between;
+  margin: 0px 24px;
+  font-size: 18px;
+}
+
+/*Button and Modal Styles*/
+
+.modal-button {
+  font-size: 36px;
+  /* background-color: #ffffff; */
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border: 0;
+  margin: 24px 0px;
+  padding: 0px 18px;
+}
+
+.modal-button:hover {
+  font-size: 36px;
+  text-decoration: overline solid #4237ff;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(66,55,255,0.5)
+}
+
+.modal-content {
+  background-color: #ffffff;
+  font-size: 30px;
+  margin: 10% auto;
+  padding: 30px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(66,55,255,1), 0 7px 20px 0 rgba(66,55,255,0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+@keyframes modalopen {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.closeBtn {
+  color: #4237ff;
+  float: right;
+  font-size: 24px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
